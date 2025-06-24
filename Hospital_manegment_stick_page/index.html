@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scrimatec IT Solutions Pvt Ltd</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+     /* White sticky navbar */
+    #mainNavbar {
+      background-color: white;
+      transition: box-shadow 0.3s ease;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-nav .nav-link {
+      color: #000 !important;
+      font-weight: 500;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #0d6efd !important;
+    }
+    .navbar-logo {
+  height: 40px;  /* adjust as needed: 30px, 40px, etc. */
+  width: auto;
+}
+
+  
+    .banner-img {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+    }
+    .section-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    .card {
+      border: none;
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+    footer {
+      background: #0d6efd;
+      color: white;
+      padding: 20px 0;
+    }
+      .icon-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  
+  .hover-effect:hover {
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+  }
+  
+  .hover-effect:hover .icon-circle {
+    transform: scale(1.1);
+  }
+  .fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  #contact .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  #contact .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+    .glass-box {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+  }
+  
+.main-home{
+    padding: 2rem 7%;
+    background-image: url(images/blurbg1.jpg);
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.home .home-left-content{
+    flex: 1 1 40rem;
+}
+
+.home-left-content span{
+    font-size: 2rem;
+    color: var(--maincolor);
+    padding: 1rem 0;
+    font-weight: bolder;
+}
+.home-left-content h2{
+    font-size: 48px;
+    margin: 1rem 0;
+    
+}
+.home-left-content p{
+    font-size: 1.7rem;
+    color: var(--textcolor);
+    line-height: 3rem;
+}
+
+.home-btn{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.home-btn a{
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    background-color: var(--maincolor);
+    font-size: 1.7rem;
+    color: white;
+    transition: 0.5s ease;
+}
+.home-btn a:hover{
+    padding: 1.5rem 2.5rem;
+}
+
+
+.homebtnsec{
+    background:transparent !important;
+    color: var(--textcolor) !important;
+    border: 1px solid var(--maincolor);
+}
+.homebtnsec:hover{
+    background-color: var(--secondcolor) !important;
+    color: white !important;
+}
+
+.home .home-right-content{
+    flex: 1 1 50rem;
+}
+
+.home .home-right-content img{
+    width: 100%;
+    margin-top: 4rem;
+}
+
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="images/logo1.png" alt="Scrimatec Logo" class="navbar-logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+ <div class="main-home">
+
+            <div class="home">
+                <div class="home-left-content">
+                   <h1 style="font-weight: bold; font-family: 'Segoe UI', sans-serif; font-size: 3rem; color: #2c3e50;">
+  Welcome to Hospital Management
+</h1>
+
+                    
+                   
+                
+                        
+                    </div>
+
+                <div class="home-right-content">
+                    <img src="images/hero2.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+<!-- About Section -->
+<section id="about" class="py-5 bg-white">
+  <div class="container">
+    <h2 class="section-title text-center mb-5 animate__animated animate__fadeIn">About Us</h2>
+    <p class="text-center mb-5 animate__animated animate__fadeIn animate__delay-1s">
+      Scrimatec IT Solutions Pvt Ltd offers cutting-edge healthcare management systems to automate patient tracking, staff monitoring, and clinical records. Our innovative approach ensures smooth operation, reduced paperwork, and better patient outcomes.
+    </p>
+    
+    <div class="row g-4">
+      <!-- Feature Card 1 -->
+      <div class="col-md-4 animate__animated animate__fadeInUp">
+        <div class="card border-0 shadow-sm h-100 hover-effect">
+          <div class="card-body text-center p-4">
+            <div class="icon-circle bg-primary mb-4 mx-auto">
+              <i class="fas fa-hospital-alt fa-2x text-white"></i>
+            </div>
+            <h5 class="card-title">Hospital Management</h5>
+            <p class="card-text">Comprehensive solutions for patient care, bed management, and staff coordination.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Feature Card 2 -->
+      <div class="col-md-4 animate__animated animate__fadeInUp animate__delay-1s">
+        <div class="card border-0 shadow-sm h-100 hover-effect">
+          <div class="card-body text-center p-4">
+            <div class="icon-circle bg-success mb-4 mx-auto">
+              <i class="fas fa-user-md fa-2x text-white"></i>
+            </div>
+            <h5 class="card-title">Doctor-Patient Portal</h5>
+            <p class="card-text">Seamless communication between healthcare providers and patients.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Feature Card 3 -->
+      <div class="col-md-4 animate__animated animate__fadeInUp animate__delay-2s">
+        <div class="card border-0 shadow-sm h-100 hover-effect">
+          <div class="card-body text-center p-4">
+            <div class="icon-circle bg-info mb-4 mx-auto">
+              <i class="fas fa-file-medical-alt fa-2x text-white"></i>
+            </div>
+            <h5 class="card-title">E-Medical Records</h5>
+            <p class="card-text">Secure digital records management with easy retrieval system.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+ 
+</section>
+
+
+
+<!-- Add this in your head section if not already present -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+<section id="services" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Our Services</h2>
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card text-center p-4" style="background-color: #e3f2fd;">
+          <i class="bi bi-clipboard2-pulse-fill fs-1 text-primary mb-3"></i>
+          <h5 class="text-primary">OPD (Outpatient Department)</h5>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card text-center p-4" style="background-color: #fce4ec;">
+          <i class="bi bi-hospital-fill fs-1 text-danger mb-3"></i>
+          <h5 class="text-danger">IPD (Inpatient Department)</h5>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card text-center p-4" style="background-color: #e8f5e9;">
+          <i class="bi bi-columns-gap fs-1 text-success mb-3"></i>
+          <h5 class="text-success">Bed Management</h5>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card text-center p-4" style="background-color: #fff3e0;">
+          <i class="bi bi-person-check-fill fs-1 text-warning mb-3"></i>
+          <h5 class="text-warning">Staff Attendance</h5>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card text-center p-4" style="background-color: #ede7f6;">
+          <i class="bi bi-file-earmark-medical-fill fs-1 text-primary mb-3"></i>
+          <h5 class="text-primary">Scan & Medical Records</h5>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card text-center p-4" style="background-color: #f1f8e9;">
+          <i class="bi bi-truck-front-fill fs-1 text-success mb-3"></i>
+          <h5 class="text-success">Ambulance Services</h5>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card text-center p-4" style="background-color: #f3e5f5;">
+          <i class="bi bi-people-fill fs-1 text-secondary mb-3"></i>
+          <h5 class="text-secondary">Hospital Staff</h5>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card text-center p-4" style="background-color: #e0f2f1;">
+          <i class="bi bi-cash-stack fs-1 text-info mb-3"></i>
+          <h5 class="text-info">Accounts & Billing</h5>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card text-center p-4" style="background-color: #fbe9e7;">
+          <i class="bi bi-droplet-fill fs-1 text-danger mb-3"></i>
+          <h5 class="text-danger">Blood Bank</h5>
+        </div>
+      </div>
+
+      <div class="col-md-4 offset-md-4">
+        <div class="card text-center p-4" style="background-color: #e1f5fe;">
+          <i class="bi bi-scissors fs-1 text-primary mb-3"></i>
+          <h5 class="text-primary">Operation Theatre</h5>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title text-center mb-5 fw-bold fade-in-up">Contact Us</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card p-4 shadow-lg rounded-4 fade-in-up">
+          <ul class="list-group list-group-flush fs-5">
+            <li class="list-group-item d-flex align-items-center">
+              <i class="bi bi-envelope-fill me-3 text-primary fs-4"></i>
+              <strong>Email:</strong> <span class="ms-2">info@scrimatec.com</span>
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+              <i class="bi bi-geo-alt-fill me-3 text-danger fs-4"></i>
+              <strong>Address:</strong> <span class="ms-2">522, Suratwala Mark Plazzo, Near D-Mart, Hinjewadi, Phase-1, Pune</span>
+            </li>
+            <li class="list-group-item d-flex align-items-center">
+              <i class="bi bi-telephone-fill me-3 text-success fs-4"></i>
+              <strong>Contact Number:</strong> <span class="ms-2">8208041198</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+  <p class="mb-0">© 2025 Scrimatec IT Solutions Pvt Ltd. All Rights Reserved.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const navbar = document.getElementById('mainNavbar');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+</script>
+<!-- AOS Animation Library -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
